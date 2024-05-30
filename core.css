@@ -214,7 +214,6 @@ body{
 }
 .header_nav_hover_list{
     user-select: none;
-    cursor: pointer;
 }
 .header_portfolio_fold li{
     padding-block: 0;
