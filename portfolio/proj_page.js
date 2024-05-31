@@ -131,7 +131,7 @@ const setReelActive = (num) => {
 
 // --- Onload ---
 
-window.addEventListener("load", async () => {
+window.addEventListener("DOMContentLoaded", async () => {
     await processJSON();
     reelItems = document.querySelectorAll(".reel-item");
     

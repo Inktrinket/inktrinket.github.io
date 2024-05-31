@@ -100,7 +100,7 @@ function applyHeight(element){
 
 // Hamburger Menu ----------
 
-window.addEventListener("load", () => {
+window.addEventListener("DOMContentLoaded", async () => {
 
     var hamburger = document.getElementById("hamburger"),
         frame_left = document.querySelector(".frame_left"),

@@ -208,7 +208,7 @@ const search = () => {
 
 // --- Onload ---
 
-window.addEventListener("load", async () => {
+window.addEventListener("DOMContentLoaded", async () => {
     // Load JSON
     await processJSON();
 
