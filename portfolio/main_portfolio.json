@@ -14,12 +14,17 @@
                 "photoshop"
             ],
             "videos": [
-                "OM942qQ9aW4"
+                "OM942qQ9aW4",
+                "sgGMvmeCGmQ"
             ],
             "images": [
                 {
                     "image": "01.jpg",
-                    "title": "video thumbnail"
+                    "title": "First video thumbnail"
+                },
+                {
+                    "image": "02.jpg",
+                    "title": "Second video thumbnail"
                 }
             ]
         },
@@ -45,7 +50,7 @@
             "images": [
                 {
                     "image": "01.jpg",
-                    "title": "video thumbnail"
+                    "title": "Video thumbnail"
                 }
             ]
         },
@@ -67,7 +72,7 @@
             "images": [
                 {
                     "image": "01.jpg",
-                    "title": "video thumbnail"
+                    "title": "Video thumbnail"
                 }
             ]
         },
@@ -88,7 +93,7 @@
             "images": [
                 {
                     "image": "01.jpg",
-                    "title": "video thumbnail"
+                    "title": "Video thumbnail"
                 }
             ]
         },
@@ -110,7 +115,7 @@
             "images": [
                 {
                     "image": "01.jpg",
-                    "title": "video thumbnail"
+                    "title": "Video thumbnail"
                 }
             ]
         }
@@ -134,7 +139,7 @@
             "images": [
                 {
                     "image": "01.jpg",
-                    "title": "video thumbnail"
+                    "title": "Video thumbnail"
                 }
             ]
         },
@@ -155,7 +160,7 @@
             "images": [
                 {
                     "image": "01.jpg",
-                    "title": "video thumbnail"
+                    "title": "Video thumbnail"
                 }
             ]
         },
@@ -179,11 +184,11 @@
             "images": [
                 {
                     "image": "01.jpg",
-                    "title": "lethal company video thumbnail"
+                    "title": "Lethal company video thumbnail"
                 },
                 {
                     "image": "02.jpg",
-                    "title": "fnaf: help wanted video thumbnail"
+                    "title": "FNAF: Help wanted video thumbnail"
                 }
             ]
         },
@@ -209,15 +214,15 @@
             "images": [
                 {
                     "image": "01.jpg",
-                    "title": "skydeath presentation thumbnail"
+                    "title": "Skydeath Presentation thumbnail"
                 },
                 {
                     "image": "02.jpg",
-                    "title": "skydeath live thumbnail"
+                    "title": "Skydeath Live thumbnail"
                 },
                 {
                     "image": "03.jpg",
-                    "title": "recovery signal thumbnail"
+                    "title": "Recovery Signal thumbnail"
                 }
             ]
         }
