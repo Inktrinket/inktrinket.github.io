@@ -100,6 +100,18 @@ body{
 
 
 
+/* Links ------------------------ */
+
+/* Underline links in paragraph text */
+p a,
+p a:link,
+p a:hover,
+p a:visited{
+    text-decoration: underline;
+    font-variation-settings: "wght" 400, "wdth" 100, "ital" 0;
+}
+
+
 /* Site borders ------------------------ */
 
 .site_frame{
