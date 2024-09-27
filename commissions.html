@@ -131,6 +131,20 @@
             border-radius: var(--space-small);
             max-width: 100%;
             place-self: center;
+            aspect-ratio: 16 / 9;
+        }
+
+        @supports not (aspect-ratio: 16 / 9) { /* Fallback for aspect-ratio */
+            #hero-video::before {
+                float: left;
+                padding-top: 56.25%;
+                content: "";
+            }
+            #hero-video::after {
+                display: block;
+                content: "";
+                clear: both;
+            }
         }
         
         .middle-text > *:not(:last-child){
@@ -726,7 +740,7 @@
                 </svg>
 
                 <iframe id="hero-video" class="" width="100%" height="100%" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
-                    src="https://www.youtube.com/embed/RIdc29Dk7B0?si=0TsoTlZ7Q6jvRB4V">
+                    src="https://www.youtube.com/embed/JPbnNTvjP9A?si=gNeyNJKjkLZJNCXz">
                 </iframe>
             </div>
 
