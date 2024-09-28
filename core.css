@@ -446,7 +446,11 @@ p a:visited{
     z-index: 10;
 }
 .pulldown{
-    top: -12px !important;
+    top: -4px !important;
+}
+
+#night-light + label:hover{
+    top: -12px;
 }
 
 #night-light + label.first_visit::after{
