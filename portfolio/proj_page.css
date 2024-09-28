@@ -158,8 +158,8 @@
     max-width: var(--space-largest);
 }
 
-/* 4K Portrait */
-@media only screen and (min-width: 1367px) and (max-width: 1440px) and (orientation: portrait){
+/* 1K + 4K Portrait */
+@media only screen and (min-width: 1051px) and (max-width: 1440px) and (orientation: portrait){
     .grid-main{
         grid-template-columns: 100%;
         grid-template-rows: auto;

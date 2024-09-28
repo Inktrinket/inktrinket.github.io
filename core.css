@@ -51,8 +51,8 @@ html[data-theme="dark"] [data-invert-dark="true"]::after{
     }
 }
 
-/* 4K Portrait */
-@media only screen and (min-width: 1367px) and (max-width: 1440px) and (orientation: portrait){ /* Between 1367px and 1440px */
+/* 1K + 4K Portrait */
+@media only screen and (min-width: 1051px) and (max-width: 1440px) and (orientation: portrait){ /* Between 1367px and 1440px */
     :root,::before,::after{
         --nl-position: 87.5%;
     }
