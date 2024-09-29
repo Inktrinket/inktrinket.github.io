@@ -1,5 +1,51 @@
 {
     "PERSONAL": {
+        "hi_imakevideos": {
+            "title": "\"hi. i edit videos. :D\"",
+            "subtitle": "Promo Video",
+            "tags": [
+                "promo",
+                "motion graphics",
+                "digital art",
+                "editing"
+            ],
+            "programs": [
+                "premiere", 
+                "photoshop",
+                "illustrator" 
+            ],
+            "videos": [
+                "JPbnNTvjP9A"
+            ],
+            "images": [
+                {
+                    "image": "01.jpg",
+                    "title": "Video thumbnail"
+                }
+            ]
+        },
+        "thxmcbs": {
+            "title": "\"THXMCBS\"",
+            "subtitle": "Photo/Video Collage",
+            "tags": [
+                "music",
+                "artwork",
+                "photography",
+                "collage"
+            ],
+            "programs": [
+                "premiere"
+            ],
+            "videos": [
+                "kvL3CaaSiKk"
+            ],
+            "images": [
+                {
+                    "image": "01.jpg",
+                    "title": "Video thumbnail"
+                }
+            ]
+        },
         "mob_attacks": {
             "title": "The MOB Attacks",
             "subtitle": "Gameplay Video Series",
@@ -25,6 +71,27 @@
                 {
                     "image": "02.jpg",
                     "title": "Second video thumbnail"
+                }
+            ]
+        },
+        "flowers2023": {
+            "title": "\"flowers2023\"",
+            "subtitle": "Visual Demo",
+            "tags": [
+                "music",
+                "artwork",
+                "mixed media"
+            ],
+            "programs": [
+                "premiere"
+            ],
+            "videos": [
+                "5XCX8yHuDmc"
+            ],
+            "images": [
+                {
+                    "image": "01.jpg",
+                    "title": "Video thumbnail"
                 }
             ]
         },
@@ -68,73 +135,6 @@
             ],
             "videos": [
                 "7vNQ_vdN_Q0"
-            ],
-            "images": [
-                {
-                    "image": "01.jpg",
-                    "title": "Video thumbnail"
-                }
-            ]
-        },
-        "flowers2023": {
-            "title": "\"flowers2023\"",
-            "subtitle": "Visual Demo",
-            "tags": [
-                "music",
-                "artwork",
-                "mixed media"
-            ],
-            "programs": [
-                "premiere"
-            ],
-            "videos": [
-                "5XCX8yHuDmc"
-            ],
-            "images": [
-                {
-                    "image": "01.jpg",
-                    "title": "Video thumbnail"
-                }
-            ]
-        },
-        "thxmcbs": {
-            "title": "\"THXMCBS\"",
-            "subtitle": "Photo/Video Collage",
-            "tags": [
-                "music",
-                "artwork",
-                "photography",
-                "collage"
-            ],
-            "programs": [
-                "premiere"
-            ],
-            "videos": [
-                "kvL3CaaSiKk"
-            ],
-            "images": [
-                {
-                    "image": "01.jpg",
-                    "title": "Video thumbnail"
-                }
-            ]
-        },
-        "hi_imakevideos": {
-            "title": "\"hi. i edit videos. :D\"",
-            "subtitle": "Promo Video",
-            "tags": [
-                "promo",
-                "motion graphics",
-                "digital art",
-                "editing"
-            ],
-            "programs": [
-                "premiere", 
-                "photoshop",
-                "illustrator" 
-            ],
-            "videos": [
-                "JPbnNTvjP9A"
             ],
             "images": [
                 {
