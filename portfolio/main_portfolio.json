@@ -118,6 +118,30 @@
                     "title": "Video thumbnail"
                 }
             ]
+        },
+        "hi_imakevideos": {
+            "title": "\"hi. i edit videos. :D\"",
+            "subtitle": "Promo Video",
+            "tags": [
+                "promo",
+                "motion graphics",
+                "digital art",
+                "editing"
+            ],
+            "programs": [
+                "premiere", 
+                "photoshop",
+                "illustrator" 
+            ],
+            "videos": [
+                "JPbnNTvjP9A"
+            ],
+            "images": [
+                {
+                    "image": "01.jpg",
+                    "title": "Video thumbnail"
+                }
+            ]
         }
     },
     "PROFESSIONAL": {
