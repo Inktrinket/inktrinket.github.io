@@ -72,8 +72,8 @@
             grid-template-rows: repeat(4, auto);
             grid-template-areas: 
                 "a a a a"
-                "b b c d"
-                "b b f f"
+                "b b c c"
+                "b b d d"
                 "e e g g";
             gap: var(--space-large);
             padding-bottom: calc(var(--space-largest) * var(--padding-mod));
@@ -230,125 +230,107 @@
             max-width: 100%;
         }
 
-        #time-info{
+        #fiverr-hero{
             grid-area: c;
+            position: relative;
         }
-        #time-info div:not(:last-child){
-            margin-bottom: var(--space-small);
-        }
-        #time-info h4{
-            font-family: "acumin-variable", sans-serif;
-            font-variation-settings: "wght" 700, "wdth" 70, "slnt" 0;
-            font-size: var(--txt-h2);
-        }
-        #time-info p{
-            font-size: calc(var(--txt-p) - 0.2rem);
-        }
-
-        #price{
-            grid-area: d;
-        }
-        #price > div{
-            background-color: var(--clr-darkest);
-            border-radius: 32px;
-            color: var(--clr-lightest);
-            text-align: center;
+        #fiverr-hero .block_big{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: auto;
             padding: var(--space-large);
         }
-        #price div h5{
-            font-family: "acumin-variable", sans-serif;
-            font-variation-settings: "wght" 700, "wdth" 100, "slnt" 0;
-            font-size: 5rem;
-            line-height: 3.5rem;
-            margin-bottom: var(--space-smallest);
+
+        #fiverr-hero .block_big div{
+            color: var(--clr-lightest);
         }
-        #price div h6{
-            font-family: "peridot-pe-variable", sans-serif;
-            font-variation-settings: "wght" 400, "wdth" 100, "slnt" 0;
-            font-size: 1.5rem;
+        #fiverr-hero .block_big div h4{
+            font-variation-settings: "wght" 700, "wdth" 100, "ital" 0;
+            font-size: calc(var(--txt-h3) * 1.5);
+            line-height: calc(var(--txt-lh) * 1.4);
+        }
+        #fiverr-hero .block_big div p{
+            font-variation-settings: "wght" 400, "wdth" 100, "ital" 0;
+            font-size: calc(var(--txt-p) * 1.1);
         }
 
-        .price-via{
-            display: flex;
-            flex-direction: row;
-            gap: calc(var(--space-smallest) / 2);
-            justify-content: center;
-            align-items: baseline;
+        #fiverr-hero a{
+            display: grid;
         }
-        #price-venmo{
-            width: 3rem;
+
+        #fiverr_arrow{
+            position: absolute;
+            width: 25%;
+            height: auto;
+            top: 15%;
+            left: 42%;
         }
-        #price-venmo > path{
+        #fiverr_arrow path{
             fill: var(--clr-lightest);
         }
 
-        #social-icons{
-            grid-area: f;
+        #fiverr_logo{
+            width: 80%;
+            place-self: center;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+            animation-duration: 100ms;
+            animation-name: fiverr-logo-return;
+            transition: transform 150ms ease;
         }
-        #social-icons ul{
-            display: grid;
-            grid-auto-flow: column;
-            list-style: none;
+        #fiverr_logo path{
+            fill: var(--clr-lightest);
         }
-        #social-icons ul li a{
-            display: flex;
-            flex-direction: column;
-            justify-content: end;
-        }
-        #social-icons ul li a img{
-            width: 4rem;
-            margin: 0 auto;
-        }
-        #social-icons ul li a p,
-        #social-icons ul li a p span{
-            text-align: center;
-            font-variation-settings: "wght" 300, "wdth" 90, "ital" 0;
-            font-size: calc(var(--txt-h5) - 0.2rem);
-            line-height: var(--space-smallest);
-        }
-        #social-icons ul li a p span{
-            font-size: calc(var(--txt-h5) - 0.5rem) !important;
+        #fiverr-hero a:hover #fiverr_logo{
+            animation-duration: 150ms;
+            animation-name: fiverr-logo-bounce;
         }
 
-        #discord-account-link{
-            position: relative;
-            cursor: pointer;
-        }
-        .toast{
-            position: absolute;
-            top: -45%;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: calc(var(--txt-p) - 0.25rem) !important;
-            visibility: hidden;
-            opacity: 0;
-            animation: none;
-        }
-        .cc-anim{
-            animation: cc-anim 4000ms ease forwards;
-        }
-
-        @keyframes cc-anim{
+        @keyframes fiverr-logo-bounce{
             0%{
-                visibility: visible;
-                opacity: 0;
+                transform: scale(100%);
             }
-            15%{
-                visibility: visible;
-                opacity: 1;
+            35%{
+                transform: scale(85%);
             }
-            85%{
-                visibility: visible;
-                opacity: 1;
+            100%{
+                transform: scale(110%);
             }
-            99%{
-                visibility: visible;
-                opacity: 0;
+        }
+        @keyframes fiverr-logo-return{
+            0%{
+                transform: scale(110%);
             }
-            99%{
-                visibility: hidden;
-                opacity: 0;
+            100%{
+                transform: scale(100%);
             }
+        }
+
+        #fiverr-timezone{
+            grid-area: d;
+        }
+        #fiverr-timezone .block_big{
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            grid-template-rows: auto;
+            gap: calc(var(--space-largest) * 1.25);
+            padding: var(--space-large);
+            max-width: 90%;
+            align-items: center;
+        }
+
+        #timezone_icon{
+            height: 5rem;
+            margin-bottom: 1rem;
+        }
+        #timezone_icon path{
+            fill: var(--clr-lightest);
+        }
+
+        #fiverr-timezone .block_big div p{
+            font-size: calc(var(--txt-p) * 0.8);
+            line-height: calc(var(--txt-lh) * 0.65);
+            color: var(--clr-lightest);
         }
 
         #ink-ask{
@@ -424,32 +406,6 @@
             display: grid;
         }
 
-        /* #disclaimer h3{
-            font-family: "acumin-variable", sans-serif;
-            font-variation-settings: "wght" 800, "wdth" 100, "ital" 12;
-            font-style: italic;
-            font-size: var(--txt-h2);
-            margin-bottom: var(--space-small);
-        }
-
-        #disclaimer > *:not(a){
-            margin-bottom: var(--space-smallest);
-        }
-        #disclaimer > *:nth-last-child(2){
-            margin-bottom: var(--space-small);
-        }
-
-        #disclaimer ul{
-            list-style-position: inside;
-        }
-        #disclaimer ul li{
-            margin-left: var(--space-small);
-            font-family: "peridot-pe-variable", sans-serif;
-            font-variation-settings: "wght" 300, "wdth" 100, "ital" 0;
-            font-size: var(--txt-p);
-            line-height: var(--txt-lh-p);
-        } */
-
         #contact a{
             place-self: center;
         }
@@ -502,6 +458,20 @@
                 max-width: 75%;
             }
 
+            #fiverr-hero .block_big div h4{
+                font-size: calc(var(--txt-h3) * 1.25);
+                line-height: calc(var(--txt-lh) * 1.2);
+            }
+            #fiverr-hero .block_big div p{
+                font-size: calc(var(--txt-p) * 0.8);
+                line-height: calc(var(--txt-lh) * 0.8);
+            }
+
+            #fiverr_arrow{
+                left: 45%;
+                width: 20%;
+            }
+
         }
 
         /* Tablet landscape */
@@ -545,11 +515,10 @@
                 grid-template-rows: repeat(7, auto);
                 grid-template-areas: 
                     "a a"
-                    "d d"
                     "c c"
+                    "d d"
                     "b b"
                     "e e"
-                    "f f"
                     "g g";
                 row-gap: calc(var(--space-largest) * 1.5);
             }
@@ -563,19 +532,8 @@
                 gap: var(--space-largest);
             }
 
-            #price > div{
-                max-width: 100%;
-                margin-inline: auto;
-            }
-            #price div h5{
-                font-size: 4.5rem;
-            }
-            
-            #time-info{
-                text-align: center;
-            }
-            #time-info p{
-                font-size: var(--txt-p);
+            #fiverr-timezone .block_big{
+                max-width: 100%
             }
 
             .prefs-list h3{
@@ -585,30 +543,18 @@
                 font-size: var(--txt-p);
             }
 
-            #social-icons ul{
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: repeat(2, auto);
-                grid-auto-flow: row;
-                row-gap: var(--space-largest);
-                column-gap: calc(var(--space-largest) * 2);
+            #fiverr-hero .block_big div h4{
+                font-size: calc(var(--txt-h3) * 1.4);
+                line-height: calc(var(--txt-lh) * 1.3);
             }
-            #social-icons ul li:nth-child(1),
-            #social-icons ul li:nth-child(3){
-                place-self: end;
+            #fiverr-hero .block_big div p{
+                font-size: calc(var(--txt-p) * 0.9);
+                line-height: calc(var(--txt-lh) * 0.6);
             }
-            #social-icons ul li:nth-child(2),
-            #social-icons ul li:nth-child(4){
-                place-self: start;
-            }
-            #social-icons ul li a p{
-                font-size: calc(var(--txt-h5));
-            }
-            #social-icons ul li a p span{
-                font-size: calc(var(--txt-h5) - 0.4rem) !important;
-                line-height: calc(var(--space-smallest) + 0.8rem);
-            }
-            #social-icons ul li a img{
-                width: 6rem;
+
+            #fiverr_arrow{
+                left: 50%;
+                width: 20%;
             }
 
             #ink-ask{
@@ -641,9 +587,6 @@
             #process-paragraph .button{
                 place-self: center;
             }
-            .toast{
-                top: -15%;
-            }
 
             @media only screen and (orientation: landscape){
                 .grid-heading{
@@ -657,9 +600,9 @@
                     grid-template-rows: repeat(7, auto);
                     grid-template-areas: 
                         "a a"
-                        "c d"
+                        "c c"
+                        "d d"
                         "b e"
-                        "f f"
                         "g g";
                     row-gap: var(--space-large);
                 }
@@ -671,16 +614,8 @@
                         "i i";
                     gap: var(--space-largest);
                 }
-                #time-info{
-                    text-align: left;
-                }
-                #time-info p{
-                    font-size: var(--txt-p);
-                }
-                #price > div{
-                    max-width: 60%;
-                    margin-inline: 0;
-                    margin-right: auto;
+                #fiverr-timezone .block_big{
+                    max-width: 100%
                 }
                 #ink-ask-svg{
                     top: 0;
@@ -870,63 +805,40 @@
                     </section>
                 </div>
 
-                <aside id="time-info">
-                    <div>
-                        <h4>Working hours</h4>
-                        <p>4 hours per day</p>
-                    </div>
-                    <div>
-                        <h4>Scheduling</h4>
-                        <p>Can vary because life</p>
-                    </div>
-                    <div>
-                        <h4>My timezone</h4>
-                        <p>Eastern Daylight Time (EDT)</p>
-                    </div>
-                </aside>
-
-                <section id="price">
-                    <div>
-                        <h5>$25</h5>
-                        <h6>per hour</h6>
-                        <div class="price-via">
-                            <p>via</p>
-                            <svg id="price-venmo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 16.67">
-                                <path d="M14.79-.07c.61,1,.88,2.04,.88,3.34,0,4.16-3.56,9.57-6.44,13.37H2.63L0,.84,5.77,.29l1.4,11.25c1.31-2.13,2.92-5.47,2.92-7.75,0-1.25-.21-2.1-.55-2.8L14.79-.07Zm7.48,6.96c1.06,0,3.74-.49,3.74-2.01,0-.73-.52-1.09-1.12-1.09-1.06,0-2.46,1.28-2.61,3.1h0Zm-.12,3c0,1.85,1.03,2.58,2.4,2.58,1.5,0,2.92-.36,4.77-1.31l-.7,4.74c-1.31,.64-3.34,1.06-5.32,1.06-5,0-6.81-3.04-6.81-6.84C16.5,5.21,19.42-.02,25.43-.02c3.3,0,5.16,1.85,5.16,4.44,0,4.17-5.35,5.44-8.44,5.47h0ZM47.25,3.64c0,.61-.09,1.5-.18,2.07l-1.73,10.94h-5.62l1.58-10.03,.12-1.12c0-.73-.46-.91-1-.91-.73,0-1.46,.33-1.94,.58l-1.79,11.5h-5.65L33.61,.27h4.9l.06,1.31c1.15-.76,2.67-1.58,4.83-1.58,2.86,0,3.86,1.46,3.86,3.65h0Zm16.68-1.87C65.53,.63,67.06-.01,69.15-.01c2.89,0,3.9,1.46,3.9,3.65,0,.61-.09,1.5-.18,2.07l-1.73,10.94h-5.64l1.6-10.24,.09-.82c0-.82-.46-1-1-1-.7,0-1.4,.3-1.91,.58l-1.8,11.5h-5.62l1.6-10.24,.1-.82c0-.82-.46-1-1-1-.73,0-1.46,.33-1.94,.58l-1.79,11.5h-5.65L50.74,.28h4.83l.15,1.37C56.85,.83,58.37,.01,60.4,.01c1.76,0,2.92,.76,3.49,1.79l.03-.02Zm20.3,4.77c0-1.34-.33-2.25-1.34-2.25-2.22,0-2.67,3.92-2.67,5.93,0,1.52,.43,2.46,1.43,2.46,2.1,0,2.58-4.14,2.58-6.14h0Zm-9.72,3.44C74.51,4.82,77.24-.01,83.53-.01c4.74,0,6.47,2.8,6.47,6.66,0,5.11-2.7,10.4-9.14,10.4-4.77,0-6.35-3.13-6.35-7.05h0Z"/>
+                <section id="fiverr-hero">
+                    <svg id="fiverr_arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 393.57 168.22">
+                        <path d="M388.36,98.24L297.6,5.48c-8.76-8.96-23.72-6.6-29.35,4.6-6.14,12.22-11.57,24.97-16.31,38.22C172.24,31.4,82.5,38.06,5.32,66.35c-4.32,1.58-6.45,6.45-4.71,10.7l4.64,11.37c1.47,3.6,5.29,5.66,9.1,4.89,20.85-4.19,42.09-6.56,63.2-7.68,53.53-2.5,108.46,4.29,158.3,22.93-2.38,12.84-4.24,26.06-5.55,39.68-1.24,12.92,11.1,22.95,23.51,19.13l126.88-38.98c13.05-4.01,17.23-20.42,7.68-30.18Z"/>
+                    </svg>
+                    <div class="block_big">
+                        <div>
+                            <h4>i'm on<br>fiverr!!</h4>
+                            <p>All pricing info & options available on my Fiverr gig.</p>
+                        </div>
+                        <a href="https://www.fiverr.com/s/e675d5E" target="_blank">
+                            <svg id="fiverr_logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 287.09 364.01">
+                                <path d="M46.7,364.01H127.75V179.95h78.3v184.07h81.04V111.26H127.75v-15.11c0-16.48,12.36-27.47,30.22-27.47h48.08V0h-60.44C86.54,0,46.7,37.09,46.7,90.66v20.6H0v68.68H46.7v184.07Z"/>
                             </svg>
+                        </a>
+                    </div>
+                </section>
+
+                <section id="fiverr-timezone">
+                    <div class="block_big">
+                        <svg id="timezone_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.22 103.22">
+                            <path d="M26.24,23.18c-.31,0-.62-.12-.85-.35l-6.43-6.43c-.47-.47-.47-1.23,0-1.7s1.23-.47,1.7,0l6.43,6.43c.47,.47,.47,1.23,0,1.7-.24,.24-.54,.35-.85,.35Z"/>
+                            <path d="M14.62,51.25H5.52c-.67,0-1.21-.54-1.21-1.21s.54-1.21,1.21-1.21H14.62c.67,0,1.21,.54,1.21,1.21s-.54,1.21-1.21,1.21Z"/>
+                            <path d="M19.81,85.76c-.31,0-.62-.12-.85-.35-.47-.47-.47-1.23,0-1.7l6.43-6.43c.47-.47,1.23-.47,1.7,0s.47,1.23,0,1.7l-6.43,6.43c-.24,.24-.54,.35-.85,.35Z"/>
+                            <path d="M55.52,1.25V10.35c0,.67-.54,1.21-1.21,1.21s-1.21-.54-1.21-1.21V1.25c0-.67,.54-1.21,1.21-1.21s1.21,.54,1.21,1.21Z"/>
+                            <path d="M82.39,23.18c-.31,0-.62-.12-.85-.35-.47-.47-.47-1.23,0-1.7l6.43-6.43c.47-.47,1.23-.47,1.7,0s.47,1.23,0,1.7l-6.43,6.43c-.24,.24-.54,.35-.85,.35Z"/>
+                            <path d="M96.92,96.08c-14.88,0-26.84-12.49-25.97-27.55,.76-13.19,11.62-23.87,24.82-24.45,.44-.02,.87-.03,1.31-.02,1.93,.01,2.51-2.62,.79-3.5-4.65-2.37-9.93-3.68-15.53-3.59-17.12,.27-31.46,13.91-32.51,31-1.19,19.23,14.06,35.21,33.04,35.21,5.42,0,10.53-1.3,15.05-3.61,1.74-.89,1.05-3.48-.9-3.48h-.08Z"/>
+                            <path d="M47.33,67.81c1.14-18.41,16.5-33.05,34.97-33.34,.41,0,.81,.01,1.22,.02-5.57-10.43-16.55-17.53-29.2-17.53-18.27,0-33.09,14.81-33.09,33.09,0,16.67,12.33,30.46,28.37,32.75-1.8-4.7-2.59-9.77-2.27-14.99Z"/>
+                        </svg>
+                        <div>
+                            <p>I exist within the Eastern Daylight Time (EDT) Timezone. If I have not responded to your message in a timely manner, this may be the reason why!</p>
                         </div>
                     </div>
                 </section>
 
-                <section id="social-icons">
-                    <ul>
-                        <li>
-                            <a href="https://twitter.com/inktrinket" target="_blank">
-                                <img src="svg/socials/socials_Twitter.svg" alt="Twitter" data-invert-dark="true">
-                                <p>@inktrinket</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/inktrinket_/" target="_blank">
-                                <img src="svg/socials/socials_Instagram.svg" alt="Instagram" data-invert-dark="true">
-                                <p>@inktrinket_</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a id="discord-account-link" onclick="copyToClipboard(this, `inktrinket`)">
-                                <p class="toast">copied to clipboard</p>
-                                <img src="svg/socials/socials_Discord.svg" alt="Discord" data-invert-dark="true">
-                                <p>inktrinket<br><span>on discord</span></p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="mailto:inktrinket@gmail.com" target="_blank">
-                                <img src="svg/socials/socials_Gmail.svg" alt="Email" data-invert-dark="true">
-                                <p>inktrinket<br><span>@gmail</span></p>
-                            </a>
-                        </li>
-                    </ul>
-                </section>
                 <div id="ink-ask">
                     <svg id="ink-ask-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 327.08 217.28">
                         <path d="M319.87,216.77c4.79,2.28,9.55-3.52,5.94-7.85-2.36-2.84-4.57-5.79-6.23-9.09-3.57-7.14-10.78-14.93-13.99-23.73-2.75-7.53-1.6-15.26-1.6-23.09V37.44C304,16.76,287.24,0,266.56,0H37.44C16.76,0,0,16.76,0,37.44v100.56C0,158.68,16.76,175.44,37.44,175.44h56.25c43.14,0,86.38,.82,129.5-.04,19.4-.39,41.33,15.04,58.56,23.24,12.7,6.04,25.41,12.09,38.11,18.13"/>

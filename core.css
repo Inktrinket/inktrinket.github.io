@@ -82,6 +82,17 @@ html[data-theme="dark"] [data-invert-dark="true"]::after{
     }
 }
 
+/* Blocks */
+
+.block{
+    background-color: var(--clr-darkest);
+    border-radius: var(--space-small);
+}
+
+.block_big{
+    background-color: var(--clr-darkest);
+    border-radius: var(--space-large);
+}
 
 
 /* Body ------------------------ */
