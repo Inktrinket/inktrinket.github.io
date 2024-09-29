@@ -57,11 +57,17 @@ window.onload = function applyCheck(){
     
     var v_checkbox = document.getElementById("night-light-label");
 
-    v_checkbox.addEventListener("mousedown", function() {
-        this.classList.add("pulldown");
-    });
-    v_checkbox.addEventListener("mouseup", function() {
-        this.classList.remove("pulldown");
+    v_checkbox.addEventListener("mousedown", night_light_down);
+    v_checkbox.addEventListener("touchstart", night_light_down);
+    v_checkbox.addEventListener("mouseup", night_light_up);
+    v_checkbox.addEventListener("touchend", night_light_down);
+
+    function night_light_down() {
+        v_checkbox.classList.add("pulldown");
+    };
+
+    function night_light_up() {
+        v_checkbox.classList.remove("pulldown");
         if(checkbox.checked){
             theme = "light";
         }
@@ -80,7 +86,7 @@ window.onload = function applyCheck(){
 
         fv_label.classList.add("theme_is_set")
 
-    });
+    };
 
     match_media.addEventListener("change", function() {
         setNightLightMedia(match_media);
