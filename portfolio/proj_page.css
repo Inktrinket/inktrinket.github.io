@@ -66,7 +66,6 @@
 }
 
 .reel-thumb{
-    aspect-ratio: 16 / 9;
     border-radius: var(--space-smallest);
     height: calc(var(--space-largest) * 2);
 }
@@ -97,8 +96,8 @@
     top: 50lvh;
     left: 50lvw;
 
+    aspect-ratio: 4 / 3;
     width: 55%;
-    height: 55%;
     z-index: 150;
     transform: translate(-50%, -100%);
     opacity: 0;
@@ -114,8 +113,8 @@
 }
 
 #image-zoom img{
-    aspect-ratio: 16/9;
-    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .grid-main__info{
@@ -204,18 +203,13 @@
     }
 }
 
-
-
-
-@supports not (aspect-ratio: 16/9) { /* Fallback for aspect-ratio */
-    .hero-gallery__image-container::before,
-    #image-zoom img::before{
+@supports not (aspect-ratio: 4 / 3) { /* Fallback for aspect-ratio */
+    #image-zoom::before {
         float: left;
-        padding-top: 56.25%;
+        padding-top: 33.33%;
         content: "";
     }
-    .hero-gallery__image-container::after,
-    #image-zoom img::after{
+    #image-zoom::after {
         display: block;
         content: "";
         clear: both;
