@@ -145,6 +145,41 @@
         }
     },
     "PROFESSIONAL": {
+        "dj_neo_destiny": {
+            "title": "DJ Neo Destiny",
+            "subtitle": "Visual Presentation",
+            "tags": [
+                "music",
+                "artwork",
+                "mixed media",
+                "live"
+            ],
+            "programs": [
+                "premiere",
+                "photoshop"
+            ],
+            "videos": [
+                "PY1GI4Bo7Uo"
+            ],
+            "images": [
+                {
+                    "image": "01.jpg",
+                    "title": "First Thumbnail"
+                },
+                {
+                    "image": "02.jpg",
+                    "title": "Second Thumbnail"
+                },
+                {
+                    "image": "03.jpg",
+                    "title": "Third Thumbnail"
+                },
+                {
+                    "image": "04.jpg",
+                    "title": "Fourth Thumbnail"
+                }
+            ]
+        },
         "lucihaslanded_gameplay": {
             "title": "LuciHasLanded",
             "subtitle": "Gameplay Videos",
