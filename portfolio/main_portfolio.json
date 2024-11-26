@@ -145,6 +145,61 @@
         }
     },
     "PROFESSIONAL": {
+        "inktrinket_video": {
+            "title": "Inktrinket.video",
+            "subtitle": "Web Project",
+            "tags": [
+                "website",
+                "web design",
+                "graphic design",
+                "project planning"
+            ],
+            "programs": [ 
+                "photoshop",
+                "illustrator" 
+            ],
+            "videos": [
+
+            ],
+            "images": [
+                {
+                    "image": "01.jpg",
+                    "title": "Iteration 1"
+                },
+                {
+                    "image": "02.jpg",
+                    "title": "Iteration 2"
+                },
+                {
+                    "image": "03.jpg",
+                    "title": "Iteration 3"
+                },
+                {
+                    "image": "04.jpg",
+                    "title": "Iteration 4"
+                },
+                {
+                    "image": "05.jpg",
+                    "title": "Iteration 5"
+                },
+                {
+                    "image": "06.jpg",
+                    "title": "Iteration 6"
+                },
+                {
+                    "image": "07.jpg",
+                    "title": "Iteration 7"
+                },
+                {
+                    "image": "08.jpg",
+                    "title": "Mood Board"
+                },
+                {
+                    "image": "09.jpg",
+                    "title": "Iteration Design Board"
+                }
+            ]
+        },
         "dj_neo_destiny": {
             "title": "DJ Neo Destiny",
             "subtitle": "Visual Presentation",
