@@ -32,12 +32,6 @@
             },
             {
               "@type": "ListItem",
-              "position": 5,
-              "name": "commissions",
-              "item": "https://inktrinket.video/commissions"
-            },
-            {
-              "@type": "ListItem",
               "position": 6,
               "name": "contact",
               "item": "https://inktrinket.video/contact"
@@ -50,7 +44,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home - inktrinket</title>
-    <meta name="description" content="I am a video designer who is looking to share my work and utilize my skillset through commissions. If you'd like to know more about me or are otherwise interested in my services, welcome!">
+    <meta name="description" content="I am a video designer who is looking to share my work and utilize my skillset with others. If you'd like to know more about me, welcome!">
 
     <link rel="preload" href="/main.js" as="script"/>
     <link rel="preload" href="/core.css" as="style"/>
@@ -59,9 +53,6 @@
 
     <script type="text/javascript" src="/main.js"></script>
     <script type="text/javascript">
-        var image_crane = new Image();
-        image_crane.src = "img/anim/index_crane.webp";
-
         var hues = [
             36, // Orange
             200, // Baby blue
@@ -556,7 +547,6 @@
                             <li><a href="/portfolio_personal.html" aria-label="Personal work portfolio">personal</a></li>
                         </ul>
                     </li>
-                    <li><a href="/commissions.html" aria-label="Commissions page">commissions</a></li>
                     <li><a href="/contact.html" aria-label="Contact page">contact</a></li>
                 </ul>
             </nav>
@@ -564,7 +554,7 @@
 
         <img id="crane-anim" src="" alt="Crane arm animation" data-invert-dark="true">
         <script type="text/javascript">
-            document.getElementById("crane-anim").src = image_crane.src;
+            document.getElementById("crane-anim").src = "img/anim/index_crane.webp" + "?a=" + Math.random();
         </script>
 
         <div class="grid-main">
@@ -624,7 +614,7 @@
             
             <main class="grid-main__b">
                 <h2 class="hero-subheading">Welcome to my website!</h2>
-                <p class="hero-paragraph">If you'd like to know more about me or are otherwise interested in my services, you can visit any of the pages up above!</p>
+                <p class="hero-paragraph">If you'd like to know more about me, you can visit any of the pages up above!</p>
                 <script type="text/javascript">
 
                     function setText(match){
