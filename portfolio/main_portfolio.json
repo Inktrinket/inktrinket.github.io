@@ -122,7 +122,7 @@
     },
     "PROFESSIONAL": {
         "inktrinket_video": {
-            "title": "Inktrinket.video",
+            "title": "\"inktrinket.video\"",
             "subtitle": "Web Project",
             "tags": [
                 "website",
@@ -178,7 +178,7 @@
         },
         "dj_neo_destiny": {
             "title": "DJ Neo Destiny",
-            "subtitle": "Visual Presentation",
+            "subtitle": "Visual Presentations",
             "tags": [
                 "music",
                 "artwork",
@@ -240,8 +240,8 @@
             ]
         },
         "mcbs_presentation_anxiety": {
-            "title": "MCBS Presents: Presentation Anxiety",
-            "subtitle": "Informational Video",
+            "title": "\"MCBS Presents: Presentation Anxiety\"",
+            "subtitle": "Student Project",
             "tags": [
                 "informative",
                 "(and how we get over it!)"
