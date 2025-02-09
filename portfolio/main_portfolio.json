@@ -50,27 +50,6 @@
                 }
             ]
         },
-        "flowers2023": {
-            "title": "\"flowers2023\"",
-            "subtitle": "Visual Demo",
-            "tags": [
-                "music",
-                "artwork",
-                "mixed media"
-            ],
-            "programs": [
-                "premiere"
-            ],
-            "videos": [
-                "5XCX8yHuDmc"
-            ],
-            "images": [
-                {
-                    "image": "01.jpg",
-                    "title": "Video thumbnail"
-                }
-            ]
-        },
         "steamvr_tutorial": {
             "title": "OpenVR2Key Tutorial",
             "subtitle": "Tutorial Video",
