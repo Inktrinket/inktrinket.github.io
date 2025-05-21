@@ -218,28 +218,6 @@
                 }
             ]
         },
-        "mcbs_presentation_anxiety": {
-            "title": "\"MCBS Presents: Presentation Anxiety\"",
-            "subtitle": "Student Project",
-            "tags": [
-                "informative",
-                "(and how we get over it!)"
-            ],
-            "programs": [
-                "premiere",
-                "photoshop",
-                "illustrator"
-            ],
-            "videos": [
-                "F_3DrlFe7w8"
-            ],
-            "images": [
-                {
-                    "image": "01.jpg",
-                    "title": "Video thumbnail"
-                }
-            ]
-        },
         "rabbit_hole": {
             "title": "The Rabbit Hole",
             "subtitle": "Podcast Videos",
